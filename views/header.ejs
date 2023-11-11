@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg bg-info ">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="/">알고리즘 도감</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/">돌아가기</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      도감
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/alldic">도감 전체</a></li>
+                      <li><a class="dropdown-item" href="/write">도감 쓰기</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      개념
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/allcon">개념 전체</a></li>
+                      <li><a class="dropdown-item" href="/writecon">개념 쓰기</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" action="/finder" method="post">
+                <input class="form-control me-2" type="search" placeholder="도감(개념X)검색하기" name="searcher" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">S</button>
+            </form>
+        </div>
+    </div>
+</nav>

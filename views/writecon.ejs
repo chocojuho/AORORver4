@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOROR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('header.ejs') %>
+    <form action="/addcon" method="post">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="conceptid" id="floatingtitle" placeholder="개념 태그(영어로 입력)">
+            <label for="floatingtitle">개념 태그(영어로 입력)</label>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="textarea1" style="height: 200px;" name="conception"></textarea>
+            <label for="textarea1" class="form-label">개념들</label>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="textarea2" style="height: 200px;" name="conceptcode"></textarea>
+            <label for="textarea1" class="form-label">관련 소스코드</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="liveToastBtn">올리기</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
